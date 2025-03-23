@@ -2,6 +2,7 @@ import { SearchForm } from "@/components/search-form";
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -14,6 +15,16 @@ import {
 } from "@/components/ui/sidebar";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Logo } from "@/components/logo";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { SparklesIcon } from "lucide-react";
+import Link from "next/link";
 
 const data = {
   navMain: [
@@ -103,6 +114,31 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarGroup>
         ))}
       </SidebarContent>
+      <SidebarFooter className="p-0">
+        <Card className="shadow-none p-0 gap-0 border-0 border-t rounded-none">
+          <CardHeader className="p-4 pb-0">
+            <div className="flex items-center gap-2">
+              <SparklesIcon className="size-4" />
+              <CardTitle className="text-sm">
+                Newsletter
+              </CardTitle>
+            </div>
+            <CardDescription>
+              Get the latest news and updates from Robin UI.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="grid p-4">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              className={buttonVariants({ size: "sm" })}
+              href="https://praveenjuge.substack.com/embed"
+            >
+              Subscribe
+            </Link>
+          </CardContent>
+        </Card>
+      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );
