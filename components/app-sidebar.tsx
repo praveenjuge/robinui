@@ -23,8 +23,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { SparklesIcon } from "lucide-react";
 import Link from "next/link";
+import { SparklesSolid } from "@mynaui/icons-react";
 
 const data = {
   navMain: [
@@ -115,19 +115,19 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         ))}
       </SidebarContent>
       <SidebarFooter className="p-0">
-        <Card className="shadow-none p-0 gap-0 border-0 border-t rounded-none">
-          <CardHeader className="p-4 pb-0">
+        <Card className="shadow-none p-4 gap-3 border-0 border-t rounded-none">
+          <CardHeader className="p-0">
             <div className="flex items-center gap-2">
-              <SparklesIcon className="size-4" />
+              <SparklesSolid className="size-4" />
               <CardTitle className="text-sm">
                 Newsletter
               </CardTitle>
             </div>
             <CardDescription>
-              Get the latest news and updates from Robin UI.
+              Get the latest news and updates from Robin UI
             </CardDescription>
           </CardHeader>
-          <CardContent className="grid p-4">
+          <CardContent className="grid p-0">
             <Link
               target="_blank"
               rel="noopener noreferrer"
