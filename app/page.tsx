@@ -1,12 +1,16 @@
+import { Badge } from "@/components/ui/badge";
 import { highlight } from "sugar-high";
 
 export default function Home() {
   return (
     <>
       <section className="pt-22 pb-10 space-y-3 max-w-lg mx-auto">
-        <p className="text-primary font-medium text-sm">
+        {
+          /* <p className="text-primary font-medium text-sm">
           React + TailwindCSS + shadcn/ui
-        </p>
+        </p> */
+        }
+        <Badge>Coming Soon</Badge>
         <h1 className="text-2xl font-semibold text-balance tracking-tight">
           Open Source AI UI Kit for 100x Faster AI Design and Development.
         </h1>
