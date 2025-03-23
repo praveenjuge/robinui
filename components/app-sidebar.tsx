@@ -117,7 +117,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarFooter className="p-0">
         <Card className="shadow-none p-4 gap-3 border-0 border-t rounded-none">
           <CardHeader className="p-0">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <SparklesSolid className="size-4" />
               <CardTitle className="text-sm">
                 Newsletter
@@ -134,7 +134,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className={buttonVariants({ size: "sm" })}
               href="https://praveenjuge.substack.com/embed"
             >
-              Subscribe
+              Subscribe for Updates
             </Link>
           </CardContent>
         </Card>
