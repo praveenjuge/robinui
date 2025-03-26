@@ -1,3 +1,4 @@
+import { ChatForm } from "@/components/chat-form";
 import { Badge } from "@/components/ui/badge";
 import { highlight } from "sugar-high";
 
@@ -19,6 +20,10 @@ export default function Home() {
           obcaecati accusantium maxime molestias iure voluptatem blanditiis ab
           dolorem vitae aperiam.
         </p>
+      </section>
+
+      <section className="w-full mx-auto">
+        <ChatForm />
       </section>
 
       <section className="max-w-lg mx-auto">
