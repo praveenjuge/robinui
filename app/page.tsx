@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className="text-2xl font-semibold text-balance tracking-tight">
           Open Source AI UI Kit for 100x Faster AI Design and Development.
         </h1>
-        <p className="text-muted-foreground text-balance">
+        <p className="text-muted-foreground">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
           obcaecati accusantium maxime molestias iure voluptatem blanditiis ab
           dolorem vitae aperiam.
