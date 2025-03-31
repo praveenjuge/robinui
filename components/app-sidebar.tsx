@@ -3,13 +3,7 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
   SidebarRail,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
@@ -25,62 +19,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { SparklesSolid } from "@mynaui/icons-react";
-
-const data = {
-  navMain: [
-    {
-      title: "Getting Started",
-      url: "#",
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-          isActive: true,
-        },
-        {
-          title: "Installation",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Components",
-      url: "#",
-      items: [
-        {
-          title: "Message",
-          url: "#",
-        },
-        {
-          title: "Chat",
-          url: "#",
-        },
-        {
-          title: "Image",
-          url: "#",
-        },
-        {
-          title: "Video",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Pro",
-      url: "#",
-      items: [
-        {
-          title: "Templates",
-          url: "#",
-        },
-        {
-          title: "Figma",
-          url: "#",
-        },
-      ],
-    },
-  ],
-};
+import { SidebarNav } from "@/components/sidebar-nav";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -96,23 +35,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SearchForm />
       </SidebarHeader>
       <SidebarContent>
-        {/* We create a SidebarGroup for each parent. */}
-        {data.navMain.map((item) => (
-          <SidebarGroup key={item.title}>
-            <SidebarGroupLabel>{item.title}</SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                {item.items.map((item) => (
-                  <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={item.isActive}>
-                      <a href={item.url}>{item.title}</a>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        ))}
+        <SidebarNav />
       </SidebarContent>
       <SidebarFooter className="p-0">
         <Card className="shadow-none p-4 gap-3 border-0 border-t rounded-none">

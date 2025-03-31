@@ -19,8 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Robin UI",
-  description: "An AI UI Kit Made with TailwindCSS and shadcn/ui.",
+  title: "Robin UI | AI UI Kit with TailwindCSS and shadcn/ui.",
+  description:
+    "Robin UI simplifies the creation of AI-powered chat applications with intuitive, customizable components designed to supercharge your design and development workflow.",
 };
 
 export default function RootLayout({

@@ -5,7 +5,6 @@ export const size = {
   width: 2500,
   height: 1248,
 };
-
 export const contentType = "image/png";
 
 export default async function Image() {

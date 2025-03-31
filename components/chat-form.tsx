@@ -49,7 +49,7 @@ export function ChatForm(
         <div
           key={index}
           data-role={message.role}
-          className="max-w-[80%] rounded-xl px-3 py-2 text-sm data-[role=assistant]:self-start data-[role=user]:self-end data-[role=assistant]:bg-gray-100 data-[role=user]:bg-primary data-[role=assistant]:text-black data-[role=user]:text-white"
+          className="max-w-[80%] rounded-xl px-3 py-2 text-sm data-[role=assistant]:self-start data-[role=user]:self-end data-[role=assistant]:bg-muted data-[role=user]:bg-primary data-[role=assistant]:text-foreground data-[role=user]:text-primary-foreground"
         >
           {message.content}
         </div>

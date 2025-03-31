@@ -16,9 +16,9 @@ export default function Home() {
           Open Source AI UI Kit for 100x Faster AI Design and Development.
         </h1>
         <p className="text-muted-foreground">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-          obcaecati accusantium maxime molestias iure voluptatem blanditiis ab
-          dolorem vitae aperiam.
+          Robin UI simplifies the creation of AI-powered chat applications with
+          intuitive, customizable components designed to supercharge your design
+          and development workflow.
         </p>
       </section>
 
